@@ -17,6 +17,7 @@ body {
   padding: 8px;
   justify-content: space-between;
   flex: 1 1 0;
+  gap: 16px;
 }
 
 .profile-image {
@@ -25,7 +26,7 @@ body {
   border-radius: 50%;
   width: 48px;
   height: 48px;
-  margin-left: 16px;
+  /* margin-left: 16px; */
 }
 
 .logo {
@@ -33,21 +34,29 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
-  margin-right: 16px;
+  /* margin-right: 16px; */
 }
-
+.left {
+  display: flex;
+  gap: 16px;
+}
 button {
   border: none;
   border-radius: 8px;
   background: rebeccapurple;
   color: white;
   padding: 8px 24px;
-  margin-left: auto;
+  /* margin-left: auto; */
 }
-.links{
+.center {
   display: flex;
-  gap: 10px;
-  justify-content: space-between;
+  flex: 1 1 auto;
+  justify-content: flex-start;
+}
+.right{
+  display: flex;
+  gap: 16px;
+  align-items: center; /*makes notification button centered */
 }
 a {
   /* this removes the line under our links */
@@ -57,6 +66,8 @@ a {
 
 ul {
   list-style-type: none;
-  margin: 0;
+  display:flex;
+  gap: 10px;
+  /* margin: 0; */
   padding:0;
 }
